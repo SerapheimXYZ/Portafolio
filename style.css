@@ -10,9 +10,62 @@
   font-style: normal;
 }
 
-.outfit-<uniquifier> {
-  font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
+.kanit-regular {
+  font-family: "Kanit", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.start {
+  z-index: -1;
+  width: 100 auto;
+  height: 75vh;
+  background-image: url(https://w.wallhaven.cc/full/dg/wallhaven-dgrxkj.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.scontent {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.txt {
+  grid-column: 1/8;
+  grid-row: 6/9;
+}
+
+.p1 {
+  font-size: 20px;
+}
+
+.pic {
+  grid-column: 12/16;
+  grid-row: 2/8;
+  background-image: url(img/IMG_20241101_114338.jpg);
+  background-size: cover;
+  border-radius: 25px;
+}
+
+.deco01 {
+  grid-column: 11/13;
+  grid-row: 1/3;
+  border-radius: 25px;
+  border: 2px solid #ffff;
+}
+
+.deco02 {
+  grid-column: 15/17;
+  grid-row: 7/9;
+  border-radius: 25px;
+  background-color: #5601fa;
+}
+
+.text-hollow-purple {
+  color: #5601fa;
 }
