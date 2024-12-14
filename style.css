@@ -89,6 +89,22 @@
   height:72px;
 }
 
+.technologies {
+  position: relative;
+  width: 42rem;
+  top: 8rem;
+  left: 50vw;
+  transform: translate(-50%, 0)
+}
+
+.technologies-container {
+  display: grid;
+  width: 42rem;
+  height: 15rem;
+  grid-template-columns: repeat(3, 1fr)
+  grid-template-rows: repeat(3, 1fr)
+}
+
 .menu-fixed {
   position: fixed;
   z-index: 256;
