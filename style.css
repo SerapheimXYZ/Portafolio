@@ -1,113 +1,181 @@
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .outfit-font {
-  font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
 }
 
 .kanit-regular {
-  font-family: "Kanit", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .introduction {
-  z-index: -1;
-  width: 100 auto;
-  height: 75vh;
-  background-image: url(https://w.wallhaven.cc/full/dg/wallhaven-dgrxkj.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
+    z-index: -1;
+    width: 100 auto;
+    height: 75vh;
+    background-image: url(https://w.wallhaven.cc/full/dg/wallhaven-dgrxkj.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .introduction-content {
-  display: grid;
-  width: 100%;
-  height: 100%;
-  grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: repeat(8, 1fr);
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(8, 1fr);
 }
 
 .introduction-content-text {
-  grid-column: 1/8;
-  grid-row: 6/9;
+    grid-column: 1/8;
+    grid-row: 6/9;
 }
 
 .p1 {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 .image-00 {
-  grid-column: 12/16;
-  grid-row: 2/8;
-  background-image: url(img/1733437613522.png);
-  background-size: cover;
-  background-position: center;
-  border-radius: 25px;
+    grid-column: 12/16;
+    grid-row: 2/8;
+    background-image: url(img/1733437613522.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
 }
 
 .text-purple {
-  color: #5601fa;
+    color: #5601fa;
 }
 
-@media (max-width: 798px) {
- .introduction {
-  width: 100 auto;
-  height: 100vh;
- }
- 
- .introduction-content-text {
-  grid-column: 1/16;
-  grid-row: 9/9;
-  text-align: center;
- }
- 
- .image-00 {
-  grid-column: 5/13;
- } 
+.text-orange {
+    color: #fd7e14;
 }
 
-@media (max-width: 576px) {
- .introduction-content-text {
-  font-size: 18px;
- }
+.bg-orange-back {
+    background-color: #7a3c0a;
+}
+
+.border-orange {
+    border: 2px #fd7e14 solid;
+}
+
+.text-cyan {
+    color: #0dcaf0;
+}
+
+.bg-cyan-back {
+    background-color: #06677a;
+}
+
+.border-cyan {
+    border: 2px #0dcaf0 solid;
+}
+
+.text-yellow {
+    color: #ffc107;
+}
+
+.bg-yellow-back {
+    background-color: #806104;
+}
+
+.border-yellow {
+    border: 2px #ffc107 solid;
 }
 
 .about {
-  position: relative;
-  top: 5rem;
+    position: relative;
+    top: 5rem;
 }
 
 .header-space {
-  height:72px;
+    height: 72px;
 }
 
 .technologies {
-  position: relative;
-  width: 42rem;
-  top: 8rem;
-  left: 50vw;
-  transform: translate(-50%, 0)
+    position: relative;
+    width: 48rem;
+    top: 8rem;
+    left: 50vw;
+    transform: translate(-50%, 0);
 }
 
 .technologies-container {
-  display: grid;
-  width: 42rem;
-  height: 15rem;
-  grid-template-columns: repeat(3, 1fr)
-  grid-template-rows: repeat(3, 1fr)
+    display: grid;
+    width: 48rem;
+    height: 12rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.tech-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+}
+
+.coming-soon {
+    grid-column: 2/4;
 }
 
 .menu-fixed {
-  position: fixed;
-  z-index: 256;
-  width: 100vw;
-  max-width: 100%;
+    position: fixed;
+    z-index: 256;
+    width: 100vw;
+    max-width: 100%;
+}
+
+@media (max-width: 798px) {
+    .introduction {
+        width: 100 auto;
+        height: 100vh;
+    }
+
+    .introduction-content-text {
+        grid-column: 1/16;
+        grid-row: 9/9;
+        text-align: center;
+    }
+
+    .image-00 {
+        grid-column: 5/13;
+    }
+
+    .technologies {
+        width: 80vw;
+    }
+
+    .technologies-container {
+        display: grid;
+        width: 80vw;
+        height: auto;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .coming-soon {
+        grid-column: 1/2;
+    }
+}
+
+@media (max-width: 576px) {
+    .introduction-content-text {
+        font-size: 18px;
+    }
 }
