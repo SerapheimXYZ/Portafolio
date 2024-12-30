@@ -128,6 +128,24 @@
     font-size: 24px;
 }
 
+.proyects {
+    position: relative;
+    width: 48rem;
+    top: 12rem;
+    left: 50vw;
+    transform: translate(-50%, 0);
+}
+
+.proyects-container {
+    display: grid;
+    width: 48rem;
+    height: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
 .coming-soon {
     grid-column: 2/4;
 }
