@@ -81,6 +81,10 @@
     border: 2px #0dcaf0 solid;
 }
 
+.border-purple {
+    border: 2px #5601fa solid;
+}
+
 .text-yellow {
     color: #ffc107;
 }
@@ -141,9 +145,35 @@
     width: 48rem;
     height: auto;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.soft-skills {
+    position: relative;
+    width: 48rem;
+    top: 18rem;
+    left: 50vw;
+    transform: translate(-50%, 0);
+}
+
+.soft-skills-container {
+    display: grid;
+    width: 48rem;
+    height: auto;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 1rem;
     padding: 1rem;
+}
+
+.skill-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
 }
 
 .coming-soon {
