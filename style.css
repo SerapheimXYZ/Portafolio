@@ -176,6 +176,36 @@
     font-size: 24px;
 }
 
+.contact {
+    position: relative;
+    width: 15rem;
+    top: 24rem;
+    left: 50vw;
+    transform: translate(-50%, 0);
+}
+
+.contact-container {
+    display: grid;
+    width: 15rem;
+    height: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.contact-button {
+    display: flex;
+    width: 6rem;
+    height: 6rem;
+    text-decoration: none;
+    outline: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+}
+
 .coming-soon {
     grid-column: 2/4;
 }
