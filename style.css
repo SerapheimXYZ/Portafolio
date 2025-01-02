@@ -150,6 +150,17 @@
     padding: 1rem;
 }
 
+.proyect-card {
+    text-decoration: none;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.proyect-card:hover {
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
 .soft-skills {
     position: relative;
     width: 48rem;
@@ -254,6 +265,26 @@
         padding: 1rem;
     }
 
+    .proyects {
+        width: 80vw;
+    }
+
+    .proyects-container {
+        width: 80vw;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .soft-skills-container {
+        width: 80vw;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .soft-skills {
+        width: 80vw;
+    }
+
     .coming-soon {
         grid-column: 1/2;
     }
@@ -262,5 +293,9 @@
 @media (max-width: 576px) {
     .introduction-content-text {
         font-size: 18px;
+    }
+
+    .skill-box {
+        font-size: 20px;
     }
 }
