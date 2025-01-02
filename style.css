@@ -61,8 +61,8 @@
     color: #fd7e14;
 }
 
-.bg-orange-back {
-    background-color: #7a3c0a;
+.bg-orange {
+    background-color: #fd7e14;
 }
 
 .border-orange {
@@ -73,8 +73,8 @@
     color: #0dcaf0;
 }
 
-.bg-cyan-back {
-    background-color: #06677a;
+.bg-cyan {
+    background-color: #0dcaf0;
 }
 
 .border-cyan {
@@ -89,8 +89,8 @@
     color: #ffc107;
 }
 
-.bg-yellow-back {
-    background-color: #806104;
+.bg-yellow {
+    background-color: #ffc107;
 }
 
 .border-yellow {
@@ -196,6 +196,8 @@
 
 .contact-button {
     display: flex;
+    color: black;
+    transition: box-shadow 0.3s ease;
     width: 6rem;
     height: 6rem;
     text-decoration: none;
@@ -204,6 +206,11 @@
     justify-content: center;
     text-align: center;
     font-size: 24px;
+}
+
+.contact-button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
 }
 
 .coming-soon {
